@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f8f6">
+    <title>History | FinPay Wallet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <main class="app-shell">
+        <header class="header">
+            <a class="profile-section" href="index.html" aria-label="FinPay home">
+                <img src="assets/images/user.png" alt="" class="profile-img">
+                <div>
+                    <p class="welcome">Welcome Back</p>
+                    <h2>Arshiyan Sayyad</h2>
+                </div>
+            </a>
+            <button class="notification-btn" type="button" data-notifications aria-label="Notifications">
+                <i class="fa-regular fa-bell" aria-hidden="true"></i>
+            </button>
+        </header>
+
+        <div class="page-content">
+            <div class="page-heading">
+                <div>
+                    <h1>Transactions</h1>
+                    <p>Your wallet activity, all in one place.</p>
+                </div>
+            </div>
+
+            <section class="content-card">
+                <div class="filters-row">
+                    <div class="filter-tabs" aria-label="Filter transactions">
+                        <button class="filter-tab is-active" type="button" data-filter="all">All</button>
+                        <button class="filter-tab" type="button" data-filter="expense">Spent</button>
+                        <button class="filter-tab" type="button" data-filter="income">Received</button>
+                    </div>
+                    <label class="sr-only" for="history-search">Search transactions</label>
+                    <input class="search-input" id="history-search" data-history-search type="search" placeholder="Search transactions">
+                </div>
+                <div data-history-list aria-live="polite"></div>
+            </section>
+        </div>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+        <a href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i><span>Home</span></a>
+        <a href="transfer.html"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i><span>Transfer</span></a>
+        <a href="history.html" class="active" aria-current="page"><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i><span>History</span></a>
+        <a href="profile.html"><i class="fa-solid fa-user" aria-hidden="true"></i><span>Profile</span></a>
+        <a href="contact.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Contact</span></a>
+    </nav>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f8f6">
+    <title>Transfer | FinPay Wallet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <main class="app-shell">
+        <header class="header">
+            <a class="profile-section" href="index.html" aria-label="FinPay home">
+                <img src="assets/images/user.png" alt="" class="profile-img">
+                <div>
+                    <p class="welcome">Welcome Back</p>
+                    <h2>Arshiyan Sayyad</h2>
+                </div>
+            </a>
+            <button class="notification-btn" type="button" data-notifications aria-label="Notifications">
+                <i class="fa-regular fa-bell" aria-hidden="true"></i>
+            </button>
+        </header>
+
+        <div class="page-content">
+            <div class="page-heading">
+                <div>
+                    <h1>Transfer</h1>
+                    <p>Move money safely, whenever you need.</p>
+                </div>
+            </div>
+
+            <div class="transfer-layout">
+                <section class="content-card">
+                    <div class="filter-tabs" aria-label="Transfer type" style="margin-bottom: 22px">
+                        <button class="filter-tab is-active" type="button" data-mode="send">Send money</button>
+                        <button class="filter-tab" type="button" data-mode="topup">Add money</button>
+                    </div>
+                    <div class="form-heading" style="margin-bottom: 20px">
+                        <span class="transaction-icon"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i></span>
+                        <div>
+                            <h2 data-transfer-heading>Send money securely</h2>
+                            <p>Transfers are protected and confirmed instantly.</p>
+                        </div>
+                    </div>
+
+                    <form class="transfer-form" data-transfer-form>
+                        <input type="hidden" name="mode" value="send">
+                        <div class="field" data-recipient-field>
+                            <label for="recipient" data-recipient-label>Recipient name</label>
+                            <input id="recipient" name="recipient" type="text" placeholder="e.g. Arshiyan Sayyad" autocomplete="name" required>
+                        </div>
+                        <div class="field">
+                            <label for="amount">Amount</label>
+                            <div class="amount-input-wrap">
+                                <span aria-hidden="true">$</span>
+                                <input id="amount" name="amount" type="number" min="0.01" step="0.01" placeholder="0.00" inputmode="decimal" required>
+                            </div>
+                            <p class="form-help">Available balance: <strong data-balance>$15,840.50</strong></p>
+                        </div>
+                        <div class="field">
+                            <label for="note">Note <span class="form-help">(optional)</span></label>
+                            <input id="note" name="note" type="text" placeholder="What’s it for?">
+                        </div>
+                        <p class="form-error" data-form-error role="alert"></p>
+                        <button class="primary-button" type="submit">
+                            <span data-submit-label>Review transfer</span>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </section>
+
+                <aside class="dashboard-side">
+                    <section class="content-card">
+                        <div class="section-title">
+                            <h3>Paying from</h3>
+                            <i class="fa-solid fa-lock" aria-label="Secure"></i>
+                        </div>
+                        <div class="payment-method">
+                            <img src="assets/images/visa-card.png" alt="Visa">
+                            <div>
+                                <strong>FinPay Visa</strong>
+                                <span>•••• 4582 · Balance <span data-balance>$15,840.50</span></span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="content-card">
+                        <div class="section-title"><h3>Transfer tips</h3></div>
+                        <p class="form-help" style="font-size: 13px; line-height: 1.7; margin: 0">
+                            Double-check the recipient details before sending. Transfers recorded here are saved on this device so your demo wallet stays up to date.
+                        </p>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+        <a href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i><span>Home</span></a>
+        <a href="transfer.html" class="active" aria-current="page"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i><span>Transfer</span></a>
+        <a href="history.html"><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i><span>History</span></a>
+        <a href="profile.html"><i class="fa-solid fa-user" aria-hidden="true"></i><span>Profile</span></a>
+        <a href="contact.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Contact</span></a>
+    </nav>
+    <script src="js/app.js"></script>
+</body>
+</html>

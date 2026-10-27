@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTech Wallet</title>
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+     <header class="header">
+        <div class="profile-section">
+            <img src="assets/images/user.png" alt="user profile" class="profile-img">
+            <div>
+                <p class="welcome">Welcome Back</p>
+                <h2>Arshiyan Sayyad</h2>
+                            </div>
+                            </div>
+                <button class="notification-btn" type="button" data-notifications aria-label="Notifications">
+                    <i class="fa-solid fa-bell"></i>
+                </button>
+
+        
+     </header>
+
+     <!--Balance card-->
+     <section class="balance-card">
+        
+        <p class="balance-label">
+            Available Balance
+        </p>
+        <h1 class="balance-amount" data-balance>$15,840.50</h1>
+
+
+<div class="card-info">
+    <span class="card-number">•••• 4582</span>
+    <img src="assets/images/visa-card.png" alt="visa card" class="card-logo">
+        </div>
+    </section>
+
+    <!-- Quick Actions -->
+
+    <section class="quick-actions">
+
+        <button class="action-card" type="button" data-action="send">
+
+            <img
+                src="assets/images/send-icon.png"
+                alt="Send">
+
+            <span>Send</span>
+
+        </button>
+
+        <button class="action-card" type="button" data-action="receive">
+
+            <img
+                src="assets/images/receive-icon.png"
+                alt="Receive">
+
+            <span>Receive</span>
+
+        </button>
+
+        <button class="action-card" type="button" data-action="topup">
+
+            <img
+                src="assets/images/topup-icon.png"
+                alt="Top Up">
+
+            <span>Top Up</span>
+
+        </button>
+
+        <button class="action-card" type="button" data-action="history">
+
+            <img
+                src="assets/images/history-icon.png"
+                alt="History">
+
+            <span>History</span>
+
+        </button>
+
+    </section>
+
+    <!-- Spending Overview -->
+
+    <section class="overview">
+
+        <div class="section-title">
+
+            <h3>Spending Overview</h3>
+
+            <a href="history.html">
+                View All
+            </a>
+
+        </div>
+
+        <div class="progress-container">
+
+            <div class="progress-bar"></div>
+
+        </div>
+
+        <div class="overview-stats">
+
+            <div>
+                <h4>$2,450</h4>
+                <p>Spent This Month</p>
+            </div>
+
+            <div>
+                <h4>$5,000</h4>
+                <p>Budget Limit</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Recent Transactions -->
+
+    <section class="transactions">
+
+        <div class="section-title">
+
+            <h3>Recent Transactions</h3>
+
+            <a href="history.html">
+                See All
+            </a>
+
+        </div>
+
+        <div class="transaction-list" data-recent-transactions>
+
+        <!-- Transaction 1 -->
+
+        <article class="transaction-card">
+
+            <div class="transaction-left">
+
+                <img
+                    src="assets/images/netflix-logo.png"
+                    alt="Netflix">
+
+                <div>
+
+                    <h4>Netflix</h4>
+                    <p>Subscription</p>
+
+                </div>
+
+            </div>
+
+            <div class="transaction-right">
+
+                <h4 class="expense">
+                    -$15.99
+                </h4>
+
+                <span>
+                    Today
+                </span>
+
+            </div>
+
+        </article>
+
+        <!-- Transaction 2 -->
+
+        <article class="transaction-card">
+
+            <div class="transaction-left">
+
+                <img
+                    src="assets/images/spotify-logo.png"
+                    alt="Spotify">
+
+                <div>
+
+                    <h4>Spotify</h4>
+                    <p>Music</p>
+
+                </div>
+
+            </div>
+
+            <div class="transaction-right">
+
+                <h4 class="expense">
+                    -$9.99
+                </h4>
+
+                <span>
+                    Yesterday
+                </span>
+
+            </div>
+
+        </article>
+
+        <!-- Transaction 3 -->
+
+        <article class="transaction-card">
+
+            <div class="transaction-left">
+
+                <img
+                    src="assets/images/amazon-logo.png"
+                    alt="Amazon">
+
+                <div>
+
+                    <h4>Amazon</h4>
+                    <p>Shopping</p>
+
+                </div>
+
+            </div>
+
+            <div class="transaction-right">
+
+                <h4 class="expense">
+                    -$120.50
+                </h4>
+
+                <span>
+                     28 OCT
+                </span>
+
+            </div>
+
+        </article>
+
+        </div>
+    </section>
+
+    <!-- Bottom Navigation -->
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="active">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </a>
+
+        <a href="transfer.html">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Transfer</span>
+        </a>
+
+        <a href="history.html">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+        <span>History</span>
+    </a>
+
+    <a href="profile.html">
+        <i class="fa-solid fa-user"></i>
+        <span>Profile</span>
+    </a>
+
+    <a href="contact.html">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Contact</span>
+    </a>
+
+</nav>
+
+<script src="js/app.js"></script>
+
+     
+</body>
+</html>

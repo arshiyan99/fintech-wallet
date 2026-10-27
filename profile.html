@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f8f6">
+    <title>Profile | FinPay Wallet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <main class="app-shell">
+        <header class="header">
+            <a class="profile-section" href="index.html" aria-label="FinPay home">
+                <img src="assets/images/user.png" alt="" class="profile-img">
+                <div>
+                    <p class="welcome">Welcome Back</p>
+                    <h2>Arshiyan Sayyad</h2>
+                </div>
+            </a>
+            <button class="notification-btn" type="button" data-notifications aria-label="Notifications">
+                <i class="fa-regular fa-bell" aria-hidden="true"></i>
+            </button>
+        </header>
+
+        <div class="page-content">
+            <div class="page-heading">
+                <div>
+                    <h1>Profile</h1>
+                    <p>Manage your personal information and preferences.</p>
+                </div>
+            </div>
+
+            <div class="dashboard-side">
+                <section class="profile-card">
+                    <img src="assets/images/user.png" alt="Arshiyan Sayyad" class="profile-img">
+                    <div>
+                        <h2>Arshiyan Sayyad</h2>
+                        <p>FinPay member since 2024</p>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="section-title"><h3>Personal information</h3></div>
+                    <div class="profile-details"><span>Email address</span><strong>arshiyansayyad1@gmail.com</strong></div>
+                    <div class="profile-details"><span>Phone number</span><strong>+91 9834016105</strong></div>
+                    <div class="profile-details"><span>Wallet ID</span><strong>arshiyan@finpay</strong></div>
+                </section>
+
+                <section class="content-card">
+                    <div class="section-title"><h3>Preferences</h3></div>
+                    <div class="setting-row">
+                        <div><div class="setting-title">Transaction alerts</div><div class="setting-copy">Get notified about wallet activity</div></div>
+                        <button class="toggle" type="button" role="switch" aria-checked="true" aria-label="Transaction alerts" data-toggle="transactionAlerts"></button>
+                    </div>
+                    <div class="setting-row">
+                        <div><div class="setting-title">Weekly spending summary</div><div class="setting-copy">Receive a weekly overview of your spending</div></div>
+                        <button class="toggle" type="button" role="switch" aria-checked="false" aria-label="Weekly spending summary" data-toggle="weeklySpendingSummary"></button>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="section-title"><h3>Wallet data</h3></div>
+                    <p class="form-help" style="font-size: 13px; line-height: 1.7; margin: 0">
+                        Your balance, transaction history, and preferences are saved in this browser only. They are not sent to email or WhatsApp.
+                    </p>
+                </section>
+
+                <section class="content-card">
+                    <div class="section-title"><h3>Security</h3></div>
+                    <div class="setting-row">
+                        <div><div class="setting-title">Password</div><div class="setting-copy">Keep your account secure with a strong password</div></div>
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="setting-row">
+                        <div><div class="setting-title">Help &amp; support</div><div class="setting-copy">We’re here if you need a hand</div></div>
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+        <a href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i><span>Home</span></a>
+        <a href="transfer.html"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i><span>Transfer</span></a>
+        <a href="history.html"><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i><span>History</span></a>
+        <a href="profile.html" class="active" aria-current="page"><i class="fa-solid fa-user" aria-hidden="true"></i><span>Profile</span></a>
+        <a href="contact.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Contact</span></a>
+    </nav>
+    <script src="js/app.js"></script>
+</body>
+</html>
