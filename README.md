@@ -4,7 +4,7 @@
 
 **A responsive wallet dashboard concept built with HTML, CSS, and vanilla JavaScript.**
 
-[View the project](https://github.com/arshiyan99/fintech-wallet)
+[Live Demo](https://fintechwallet.netlify.app/) · [Source Code](https://github.com/arshiyan99/fintech-wallet)
 
 </div>
 
@@ -15,6 +15,20 @@
 FinPay Wallet is a browser-based front-end demo for exploring a personal finance dashboard. It brings balances, transaction activity, transfer forms, and profile preferences together in a responsive interface.
 
 > **Demo only:** This project is not a financial product. Transfers and top-ups update a locally stored demo balance; they do not move real money or connect to a bank or payment provider.
+
+## Screenshots
+
+### Wallet dashboard
+
+![FinPay Wallet dashboard showing the balance, quick actions, spending overview, and recent transactions](assets/screenshots/wallet-dashboard.png)
+
+### Transaction history
+
+![FinPay Wallet transaction history with search and transaction type filters](assets/screenshots/transaction-history.png)
+
+### Transfer
+
+![FinPay Wallet transfer page with recipient and amount fields](assets/screenshots/transfer.png)
 
 ## Features
 
@@ -50,6 +64,7 @@ No dependencies, package installation, or build step are required.
 | `css/style.css` | Shared styles and responsive layouts |
 | `js/app.js` | Wallet state, persistence, and page interactions |
 | `assets/images/` | Interface and transaction images |
+| `assets/screenshots/` | Screenshots of the live application |
 
 ## Data and privacy
 
