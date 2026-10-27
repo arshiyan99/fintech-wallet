@@ -36,9 +36,7 @@ No dependencies, package installation, or build step are required.
    cd fintech-wallet
    ```
 
-2. Open `index.html` in a browser.
-
-   Alternatively, serve the project directory with any static file server and open its local URL.
+2. Open `index.html` in a browser. Alternatively, serve the project directory with any static file server and open its local URL.
 
 ## Project structure
 
@@ -61,4 +59,4 @@ The sample profile and contact details in the interface are part of the project 
 
 ## License
 
-No license has been specified for this project. All rights remain with their respective owners unless a license is added.
+This project is licensed under the [MIT License](./LICENSE).
